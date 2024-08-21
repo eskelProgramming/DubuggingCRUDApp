@@ -6,6 +6,10 @@
         {
             //Add student to context
             db.Students.Add(p);
+
+            //Save changes to database
+            db.SaveChanges();
+
             return p;
         }
 
