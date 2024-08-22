@@ -35,10 +35,10 @@
 
         public static void Update(SchoolContext context, Student p)
         {
-            //Mark the object as deleted
-            context.Students.Remove(p);
+            //Mark the object as Updated
+            context.Students.Update(p);
 
-            //Send delete query to database
+            //Send query to database
             context.SaveChanges();
         }
     }
