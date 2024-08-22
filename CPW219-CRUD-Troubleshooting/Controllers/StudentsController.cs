@@ -59,6 +59,12 @@ namespace CPW219_CRUD_Troubleshooting.Controllers
             return View(p);
         }
 
+        public IActionResult Details(int id)
+        {
+            Student p = StudentDb.GetStudent(context, id);
+            return View(p);
+        }
+
         public IActionResult Delete(int id)
         {
             Student p = StudentDb.GetStudent(context, id);
